@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+  --beige: #f5f5dc;
+  --dark-gray: #2e2e2e;
+  --light-gray: #dcdcdc;
+  --accent: #9a8c98;
+
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: var(--dark-gray);
+  background-color: var(--beige);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--beige);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+a {
+  color: var(--dark-gray);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+button {
+  font-family: 'Outfit', sans-serif;
+  padding: 0.6em 1.4em;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--dark-gray);
+  color: var(--beige);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1c1c1c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--dark-gray);
+  margin-bottom: 0.5rem;
+}
+
+input, select, textarea {
+  font-family: 'Outfit', sans-serif;
+  padding: 0.6em 1em;
+  border-radius: 6px;
+  border: 1px solid var(--light-gray);
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.page-content {
+  padding: 100px 20px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Navbar fix */
+nav {
+  background-color: var(--dark-gray);
+  color: var(--beige);
+}
+
+nav a {
+  color: var(--beige);
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+

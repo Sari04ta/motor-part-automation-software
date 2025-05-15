@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;800&display=swap');
+
+.slider-container {
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.slide {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 40px;
+  font-size: 1.6rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 1s ease-in-out;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 800px;
+  width: 90%;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  z-index: 1;
+}
+
+.highlight-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  color: #f0f0f0;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  background-color: #111;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+/* Slide Background Animation */
+.slide-1 {
+  animation: panZoom 30s infinite;
+}
+
+@keyframes panZoom {
+  0% {
+    background-image: url("/assets/slide1a.jpg");
+    background-position: center;
+    background-size: 100%;
+  }
+  33% {
+    background-image: url("/assets/slide1b.jpg");
+    background-position: left center;
+    background-size: 110%;
+  }
+  66% {
+    background-image: url("/assets/slide1c.jpg");
+    background-position: right center;
+    background-size: 105%;
+  }
+  100% {
+    background-image: url("/assets/slide1a.jpg");
+    background-position: center;
+    background-size: 100%;
+  }
+}
+
+.slide-2 {
+  background-color: #f5f5dc; /* Light Beige */
+  color: #111;
+}
+
+.slide-3 {
+  background-color: #d3d3d3; /* Light Gray */
+  color: #111;
+}
+
+.slide-4 {
+  background-color: #2f2f2f; /* Dark Gray */
+  color: #fff;
+}
+
+/* About Us */
+.about-us h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #d3d3d3;
+}
+
+.about-us ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.about-us li {
+  font-size: 1.2rem;
+  margin: 6px 0;
+  color: #333;
+}
+
+/* Scroll Down Indicator */
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, 10px); }
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 16px;
+  border-radius: 12px;
+  transition: background 0.3s;
+}
+
+.back-to-top:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Fade-in text animation */
+.fade-in {
+  animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

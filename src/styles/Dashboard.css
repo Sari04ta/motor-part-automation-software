@@ -1,0 +1,100 @@
+/* Reset and base styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: auto;
+  }
+  
+  body {
+    font-family: 'Urbanist', sans-serif;
+    background-color: #f8f5f0;
+    color: #222;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  /* Container */
+  .dashboard-container {
+    padding: 100px 30px 50px;
+    font-family: 'Urbanist', sans-serif;
+    background-color: #f8f5f0;
+    color: #222;
+  }
+  
+  /* Headers */
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+    color: #444;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+  
+  /* Form styles */
+  .dashboard-container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  
+  .dashboard-container input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    flex: 1 1 200px;
+  }
+  
+  .dashboard-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dashboard-container button:hover {
+    background-color: #555;
+  }
+  
+  /* List styles */
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .dashboard-container form {
+      flex-direction: column;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
